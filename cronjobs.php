@@ -608,7 +608,7 @@ class CronJobs extends Module
         if ((($day >= -1) && ($day <= 31)) == false) {
             $success &= $this->setErrorMessage('The value you chose for the day is not valid.');
         }
-        if ((($month >= -1) && ($month <= 31)) == false) {
+        if ((($month >= -1) && ($month <= 12)) == false) {
             $success &= $this->setErrorMessage('The value you chose for the month is not valid.');
         }
         if ((($day_of_week >= -1) && ($day_of_week < 7)) == false) {
